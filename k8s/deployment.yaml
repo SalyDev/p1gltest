@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: p1gltest
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: p1gltest
+
+  template:
+    metadata:
+      labels:
+        app: p1gltest
+
+    spec:
+      containers:
+      - name: p1gltest
+        image: p1gltest:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80

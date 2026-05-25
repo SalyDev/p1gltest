@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: p1gltest-service
+
+spec:
+  type: NodePort
+
+  selector:
+    app: p1gltest
+
+  ports:
+  - port: 80
+    targetPort: 80
+    nodePort: 30080

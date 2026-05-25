@@ -364,7 +364,7 @@ export default function App() {
 
           <button className="btn-google" onClick={handleGoogle}>
             <GoogleIcon />
-            Continuer avec Google
+            SE CONNECTER avec Google
           </button>
 
           <p className="signup-row">
