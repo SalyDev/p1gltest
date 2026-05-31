@@ -4,13 +4,10 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install
-
-RUN npm list typescript
+RUN npm cache clean --force
+RUN npm install --verbose
 
 COPY . .
-
-RUN ls -la node_modules/.bin
 
 RUN npm run build
 
