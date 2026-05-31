@@ -4,8 +4,12 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm cache clean --force
-RUN npm install --verbose
+RUN npm install
+
+RUN node -v
+RUN npm -v
+RUN ls -la node_modules/.bin || true
+RUN npx tsc --version || true
 
 COPY . .
 
