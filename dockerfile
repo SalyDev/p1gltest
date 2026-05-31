@@ -6,7 +6,11 @@ COPY package*.json ./
 
 RUN npm install
 
+RUN npm list typescript
+
 COPY . .
+
+RUN ls -la node_modules/.bin
 
 RUN npm run build
 
