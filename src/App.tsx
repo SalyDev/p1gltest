@@ -301,7 +301,7 @@ export default function App() {
 
           <div className="brand">
             <div className="brand-icon">⚡</div>
-            <span className="brand-name">P1GL APP ONLINE</span>
+            <span className="brand-name">P1GL APP ONLINE 2</span>
           </div>
 
           {success && (
